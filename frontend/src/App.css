@@ -1,0 +1,178 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card-body i{
+  cursor: pointer;
+}
+
+body{
+  background: url('./images/qqq1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  top: 0px;
+  height: 100%;
+  width: 100%;  
+}
+
+.formDiv input, .formDiv textarea, #noteform textarea, #noteform input{
+  background: none;
+  border: none;
+  /* width: 300px; */
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: x-large;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  margin: 5px;
+  padding: 7px;
+}
+.formDiv input::placeholder, .formDiv textarea::placeholder, #noteform textarea::placeholder, #noteform input::placeholder {
+  color: rgb(2, 2, 2);
+  opacity: 1; 
+}
+
+.formDiv{
+  float: left;
+  display: block;
+  width: 45%;
+  margin: 7px auto;
+  padding: 7px 18px;
+}
+
+#form textarea, #noteform textarea{
+  border: 1px solid black;
+}
+
+
+#form i, #noteform i{
+font-size: x-large;
+padding-top: 15px;
+padding-right: 20px;
+}
+
+.formHeading{
+  border-bottom: 3px solid brown;
+  width: 85%;
+  margin: 4px auto;
+  padding: 15px 10px 10px 0px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+}
+.noteBox{
+  /* float: left; */
+  width: 48%;
+  margin: 7px;
+  padding: 3px;
+}
+
+.addNote{
+  width: 95%;
+  margin: auto;
+}
+
+#form, #noteform{
+  width: 80%;
+  margin: auto;
+  padding: 7px 11px;
+}
+
+.btnlen{
+  margin: 10px auto;
+  padding: 7px;
+  width: 150px;
+  border-radius: 10px;
+}
+.notePage{
+  display: flex;
+}
+
+.card{
+  background: none;
+  outline: none;
+  border: 2px solid black;
+}
+
+#noNotes{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: x-large;
+}
+
+@media only screen and (max-width: 600px){
+
+  #form{
+    width: 95%;
+  }
+  .formDiv{
+    width: 97%
+  }
+  .formHeading{
+    width: 93%;
+  }
+  #noteform{
+    width: 93%;
+  }
+  .notePage{
+    display: block;
+  }
+  .noteBox{
+    width: 95%;
+  }
+
+}
+
+
+@media only screen and ( min-width: 601px) and ( max-width: 991px){
+
+  #form{
+    width: 76%;
+  }
+  .formDiv{
+    width: 90%
+  }
+  .formHeading{
+    width: 86%;
+  }
+  #noteform{
+    width: 86%;
+  }
+  .notePage{
+    display: block;
+  }
+  .noteBox{
+    width: 95%;
+  }
+}
